@@ -21,7 +21,7 @@ const questions = [
         {
             type: 'input',
             message: 'Please provide instillation instructions if there are any...',
-            name:'instillation'
+            name:'installation'
         },
         {
             type: 'input',
@@ -70,8 +70,10 @@ const writeToFile = data => {
 };
 
 // TODO: Create a function to initialize app
- const init = () => {
-    return inquirer.prompt(questions)};
+ function init() {
+    return inquirer.prompt(questions);
+}
+ 
 
 init()
 .then(userInput => {
@@ -85,4 +87,4 @@ init()
 })
 
 // Function call to initialize app
-init();
+
